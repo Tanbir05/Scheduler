@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweek</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="left.css">
+  <link rel="stylesheet" href="right.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <div class="navbar flex">
+      <div class="logo"><img src="icons/logo.png" height="35px"></div>
+      <div class="navop flex">
+        <div><a href="">Home</a></div>
+        <div><a href="">About</a></div>
+        <div><a href="">Terms and Conditions</a></div>
+      </div>
+      <div>
+        <button class="loginbtn" id="form-open">Log in</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="form_container">
+      <!-- Login Form -->
+      <!-- Login Form -->
+<div class="form login_form">
+  <span class="close_btn">&times;</span>
+  <form action="#">
+    <h2>Login</h2>
+    <div class="input_group">
+      <input type="email" id="email" placeholder=" " required>
+      <label for="email">Email</label>
+      <i class="uil uil-envelope-alt email_icon"></i>
+    </div>
+    <div class="input_group">
+      <input type="password" id="password" placeholder=" " required>
+      <label for="password">Password</label>
+      <i class="uil uil-lock password_icon"></i>
+      <i class="uil uil-eye-slash pw_toggle"></i>
+    </div>
+    <div class="options">
+      <label class="checkbox">
+        <input type="checkbox" id="remember">
+        <span>Remember me</span>
+      </label>
+      <a href="#" class="forgot_pw">Forgot password?</a>
+    </div>
+    <button type="submit" class="button">Login</button>
+    <button type="button" class="redirect_button" id="redirect_signup">Sign Up</button>
+  </form>
+</div>
+
+<!-- Sign-up Form -->
+<div class="form sign_up_form" style="display: none;">
+  <span class="close_btn">&times;</span>
+  <form action="#">
+    <h2>Sign Up</h2>
+    <div class="input_group">
+      <input type="email" id="sign_up_email" placeholder=" " required>
+      <label for="sign_up_email">Email</label>
+      <i class="uil uil-envelope-alt email_icon"></i>
+    </div>
+    <div class="input_group">
+      <input type="password" id="sign_up_password" placeholder=" " required>
+      <label for="sign_up_password">Password</label>
+      <i class="uil uil-lock password_icon"></i>
+      <i class="uil uil-eye-slash pw_toggle"></i>
+    </div>
+    <div class="input_group">
+      <input type="password" id="confirm_password" placeholder=" " required>
+      <label for="confirm_password">Confirm Password</label>
+      <i class="uil uil-lock password_icon"></i>
+      <i class="uil uil-eye-slash pw_toggle"></i>
+    </div>
+    <button class="button">Sign Up Now</button>
+    <div class="login_signup">
+      <p>Already have an account?</p>
+      <button type="button" id="login" class="button">Login</button>
+    </div>
+  </form>
+</div>
+    </div>
+  </section>
+
+  <div class="content flex">
+    <div class="left">
+      <div class="manager">
+        <div class="flex"><img src="icons/plus.svg">Add tasks for today</div>
+        <div class="add flex">
+          <input type="text" placeholder="Enter your task" id="addtask">
+          <button id="addbtn" onclick="addtask()">Add</button>
+        </div>        
+      </div>
+      <div class="schedule">
+        <div class="flex"><img src="icons/calendar.svg">Schedule tasks</div>
+      </div>
+      <div class="ai">
+        <div class="flex"><img src="icons/aiassit.svg">AI personal assistant</div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="stats flex">
+        <div class="pending">
+          <h2 id="taskheading" style="color: rgb(248, 255, 58);">Pending Tasks</h2>
+          <div class="tasks" id="pendingtask">
+            <!-- <div class="list"><span><img src="icons/unchecked.svg" id="checkbox" onclick="check()"></span><img src="icons/cross.svg" id="deletebtn">
+            </div> -->
+          </div>
+        </div>
+        <div class="done">
+          <h2 id="taskheading" style="color: rgb(77, 255, 121);">Tasks Completed</h2>
+          <div class="tasks" id="donetask">
+            
+          </div>
+        </div>
+      </div>
+      <div class="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKolkata&showPrint=0&src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

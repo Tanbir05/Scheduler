@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap');
+
+body{
+  background-color: #000000;
+  margin: 0;
+  font-family: "SUSE", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+iframe{
+  filter: invert();
+}
+.flex{
+  display: flex;
+  gap: 10px;
+}
+
+.navbar{
+  background-color: #111111;
+  margin: 0;
+  padding: 20px;
+}
+.logo{
+  margin-left: 20px;
+  padding-right: 5px;
+}
+.navop{
+  width: 100%;
+  justify-content: right;
+  gap: 30px;
+  font-size: 18px;
+  padding-top: 11px;
+}
+.navop a{
+  color: rgb(205, 205, 205);
+  text-decoration: none ;
+}
+.navop a:hover{
+  color: white;
+}
+.loginbtn{
+  width: 100px;
+  padding: 10px 20px;
+  font-family: "SUSE", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: rgb(70, 91, 211);
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px; /* Keep vertical scrollbar */
+  height: 0px; /* Hide horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+iframe{
+  border:solid 1px #777;
+  width:74vw;
+  height:370px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+}
